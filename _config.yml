@@ -1,0 +1,38 @@
+title: "Bulgarian C++ Working Group"
+description: >-
+  Official webpage of the Bulgarian C++ Working Group "C++ and Programming Languages"
+  at the Bulgarian Standardization Institute (BDS), participating in ISO/IEC JTC 1/SC 22/WG 21
+url: "https://bgisocpp.github.io"
+baseurl: ""
+
+theme: minima
+
+sass:
+  quiet_deps: true
+
+collections:
+  meetings:
+    output: true
+    permalink: /meetings/:year/:month/:day/:title/
+    sort_by: date
+
+defaults:
+  - scope:
+      path: ""
+      type: "meetings"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+header_pages:
+  - meetings.md
+  - about.md
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

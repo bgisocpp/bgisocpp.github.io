@@ -1,0 +1,41 @@
+backend:
+  name: github
+  repo: bgisocpp/bgisocpp.github.io
+  branch: master
+  base_url: https://effortless-naiad-292791.netlify.app
+
+# Uncomment the line below for local development with `npx decap-server`
+local_backend: true
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "meetings"
+    label: "Meetings"
+    folder: "_meetings"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Time", name: "time", widget: "string", required: false, hint: "e.g. 18:00 EET" }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Location link", name: "location_link", widget: "string", required: false, hint: "Google Maps URL" }
+      - { label: "Presenter", name: "presenter", widget: "markdown", required: false, hint: "Name and short bio of the presenter" }
+      - { label: "Agenda", name: "agenda", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/about/" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+
