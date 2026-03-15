@@ -1,0 +1,37 @@
+---
+layout: page
+---
+
+{% if page.agenda %}
+<h2>Agenda</h2>
+{{ page.agenda | markdownify }}
+{% endif %}
+
+{% if page.speakers %}
+<h2>Speakers</h2>
+{{ page.speakers | markdownify }}
+{% endif %}
+
+{% if page.date %}<p><strong>Date:</strong> {{ page.date | date: "%d/%m/%Y, %H:%M" }}</p>{% endif %}
+{% if page.location %}<p><strong>Location:</strong> {% if page.location_link %}<a href="{{ page.location_link }}">{{ page.location }}</a>{% else %}{{ page.location }}{% endif %}</p>{% endif %}
+{% if page.location_link %}<iframe src="https://www.google.com/maps?q={{ page.location | url_encode }}&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>{% endif %}
+{% if page.sponsor %}<p><strong>Sponsor:</strong> {{ page.sponsor }}</p>{% endif %}
+
+{{ content }}
+
+{% if page.slides.size > 0 %}
+<h2>Slides</h2>
+<ul>
+{% for slide in page.slides %}
+  <li><a href="{{ slide.file }}">{{ slide.title }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if page.materials %}
+<h2>Materials</h2>
+{{ page.materials | markdownify }}
+{% endif %}
+
+
+

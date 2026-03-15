@@ -5,7 +5,7 @@ backend:
   base_url: https://effortless-naiad-292791.netlify.app
 
 # Uncomment the line below for local development with `npx decap-server`
-local_backend: true
+# local_backend: true
 
 media_folder: "uploads"
 public_folder: "/uploads"
@@ -19,12 +19,20 @@ collections:
     sortable_fields: ["date"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
-      - { label: "Time", name: "time", widget: "string", required: false, hint: "e.g. 18:00 EET" }
+      - { label: "Date & Time", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" }
       - { label: "Location", name: "location", widget: "string", required: false }
       - { label: "Location link", name: "location_link", widget: "string", required: false, hint: "Google Maps URL" }
-      - { label: "Presenter", name: "presenter", widget: "markdown", required: false, hint: "Name and short bio of the presenter" }
       - { label: "Agenda", name: "agenda", widget: "markdown" }
+      - { label: "Speakers", name: "speakers", widget: "markdown", required: false, hint: "Names and short bios of the speakers" }
+      - label: "Slides"
+        name: "slides"
+        widget: "list"
+        required: false
+        hint: "Upload one or more slide decks"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "File", name: "file", widget: "file" }
+      - { label: "Materials", name: "materials", widget: "markdown", required: false, hint: "Code examples, links to repos, and other resources" }
 
   - name: "pages"
     label: "Pages"

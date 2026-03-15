@@ -4,8 +4,10 @@ description: >-
   at the Bulgarian Standardization Institute (BDS), participating in ISO/IEC JTC 1/SC 22/WG 21
 url: "https://bgisocpp.github.io"
 baseurl: ""
+timezone: "Europe/Sofia"
 
 theme: minima
+future: true
 
 sass:
   quiet_deps: true
@@ -21,7 +23,7 @@ defaults:
       path: ""
       type: "meetings"
     values:
-      layout: "page"
+      layout: "meeting"
   - scope:
       path: ""
     values:

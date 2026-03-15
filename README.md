@@ -46,12 +46,12 @@ Edit the Markdown files directly:
   ```markdown
   ---
   title: "Meeting Title"
-  date: 15/04/2026
-  time: "18:00 EET"
+  date: 2026-04-15T18:00:00+03:00
   location: "Sofia"
+  location_link: "https://maps.google.com/..."
+  agenda: "Topics to discuss..."
+  speakers: "Speaker name and bio..."
   ---
-
-  Meeting body in Markdown.
   ```
 
 - **About page** — edit `about.md`

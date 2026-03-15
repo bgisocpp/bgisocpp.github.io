@@ -13,7 +13,7 @@ title: Home
   {% assign meeting_date = meeting.date | date: "%Y-%m-%d" %}
   {% if meeting_date >= today %}
     {% assign has_upcoming = true %}
-- **[{{ meeting.title }}]({{ meeting.url | relative_url }})** — {{ meeting.date | date: "%d/%m/%Y" }}{% if meeting.time %}, {{ meeting.time }}{% endif %}{% if meeting.location %} · {% if meeting.location_link %}[{{ meeting.location }}]({{ meeting.location_link }}){% else %}{{ meeting.location }}{% endif %}{% endif %}{% if meeting.presenter %} · Presenter: {{ meeting.presenter }}{% endif %}{% if meeting.sponsor %} · Sponsor: {{ meeting.sponsor }}{% endif %}
+- **[{{ meeting.title }}]({{ meeting.url | relative_url }})** — {{ meeting.date | date: "%d/%m/%Y" }}
   {% endif %}
 {% endfor %}
 
