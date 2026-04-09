@@ -6,6 +6,8 @@ url: "https://bgisocpp.github.io"
 baseurl: ""
 timezone: "Europe/Sofia"
 
+github_username: bgisocpp
+
 theme: minima
 future: true
 
