@@ -22,6 +22,12 @@ Our meetings are open — anyone can participate. If you would like to give a ta
 subject related to C++, contact one of the working group members and we will schedule it
 based on interest, priority, and already scheduled talks.
 
+## Connect With Us
+
+- **Mailing list:** [bgisocpp-official](https://groups.google.com/g/bgisocpp-official) — subscribe for announcements about upcoming meetings and events
+- **LinkedIn:** [Bulgarian C++ Working Group](https://www.linkedin.com/company/bulgarian-c-working-group/)
+- **GitHub:** [bgisocpp](https://github.com/bgisocpp)
+
 ## Working Group Members
 
 - **Peter Dimov**
