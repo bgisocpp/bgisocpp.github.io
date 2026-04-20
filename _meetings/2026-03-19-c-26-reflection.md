@@ -38,4 +38,7 @@ speakers: >-
   * Vassil Vassilev - C++ standard committee member, Head of Delegation for Bulgaria to JTC1/SC22/ (WG21 for ISOCPP)
 
   * Vasil Pashov - C++ standard committee member
+slides:
+  - title: C++ 26 Reflections
+    file: /uploads/cpp_reflection_comliance_global_approved.pdf
 ---
