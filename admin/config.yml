@@ -2,7 +2,7 @@ backend:
   name: github
   repo: bgisocpp/bgisocpp.github.io
   branch: master
-  site_domain: effortless-naiad-292791.netlify.app
+  base_url: https://effortless-naiad-292791.netlify.app
 
 # Uncomment the line below for local development with `npx decap-server`
 # local_backend: true
