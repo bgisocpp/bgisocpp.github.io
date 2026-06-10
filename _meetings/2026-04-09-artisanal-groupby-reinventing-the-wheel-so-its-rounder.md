@@ -15,5 +15,8 @@ agenda: >-
 
   At one extreme, code can be simple, general-purpose, and slow. At the other extreme, every special case of input can be routed to an optimal function. George will describe a few points on the spectrum and present the payoffs and costs of each step toward greater complexity
 speakers: George Slavov
+slides:
+  - file: /uploads/artisanal-groupby-2026-mkt019377.pdf
+    title: Slides
 materials: "**[Feedback form](https://forms.gle/7yDYYfUp66xUiz526)**"
 ---
