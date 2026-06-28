@@ -34,6 +34,18 @@ collections:
           - { label: "File", name: "file", widget: "file" }
       - { label: "Materials", name: "materials", widget: "markdown", required: false, hint: "Code examples, links to repos, and other resources" }
 
+  - name: "news"
+    label: "News"
+    folder: "_news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "pages"
     label: "Pages"
     files:

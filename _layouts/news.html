@@ -1,0 +1,10 @@
+---
+layout: page
+---
+
+<p>
+  {% if page.date %}<strong>{{ page.date | date: "%d/%m/%Y" }}</strong>{% endif %}
+  {% if page.author %}&middot; {{ page.author }}{% endif %}
+</p>
+
+{{ content }}

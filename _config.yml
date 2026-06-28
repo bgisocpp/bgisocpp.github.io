@@ -19,6 +19,10 @@ collections:
     output: true
     permalink: /meetings/:year/:month/:day/:title/
     sort_by: date
+  news:
+    output: true
+    permalink: /news/:year/:month/:day/:title/
+    sort_by: date
 
 defaults:
   - scope:
@@ -28,11 +32,17 @@ defaults:
       layout: "meeting"
   - scope:
       path: ""
+      type: "news"
+    values:
+      layout: "news"
+  - scope:
+      path: ""
     values:
       layout: "page"
 
 header_pages:
   - meetings.md
+  - news.md
   - about.md
 
 exclude:
