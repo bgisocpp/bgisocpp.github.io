@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl *)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(gh api *)",
+      "Bash(xargs -I{} cat _meetings/{})"
+    ]
+  }
+}
