@@ -58,4 +58,7 @@ agenda: >-
 
   Attendance is free, but registration is required: <https://forms.cloud.microsoft/pages/responsepage.aspx?id=a-Jx97yTvkuPa3zVYM6TUFvvyXz30F9Pnj2iAzLYqjpUQzg0MVFaTkUyRElEVkNWOFQ4RVlCRUdKVy4u&route=shorturl>
 speakers: Vasil Pashov
+slides:
+  - title: Slides
+    file: /uploads/cpp_september_mailing_list_overview.pdf
 ---
